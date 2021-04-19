@@ -20,8 +20,8 @@ function draw() {
   push();
   beginShape();
   for (var i = 0; i < volhistory.length; i++) {
-    var y = map(volhistory[i], 0, 1, height/2, 0);
-    line(i, y, i, height/2);
+    var y = map(3* volhistory[i], 0, 1, height/2, 0);
+    line(i, height/2, i, y);
     line(i, height/2, i, height - y);
   }
   endShape();
